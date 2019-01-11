@@ -130,7 +130,8 @@ module AcademicBenchmarks
       end
 
       def raw_search(opts = {})
-        request_search_pages_and_concat_resources(opts.merge(auth_query_params))
+        # request_search_pages_and_concat_resources(opts.merge(auth_query_params))
+        request_search_pages_and_concat_resources(opts)
       end
 
       def invalid_search_params(opts)
@@ -155,24 +156,9 @@ module AcademicBenchmarks
           )
         end
 
-        first_page = request_page(
-          query_params: query_params,
-          limit: query_params[:limit],
-          offset: 0
-        ).parsed_response
-
-        resources = first_page["resources"]
-        count = first_page["count"]
-        offset = query_params[:limit]
-
-        while offset < count
-          page = request_page(
-            query_params: query_params,
-            limit: query_params[:limit],
-            offset: offset
-          )
-          offset += query_params[:limit]
-          resources.push(page.parsed_response["resources"])
+        resources = []
+        @handle.get_all( path: "/standards", params: query_params ).each do |resp|
+          resources << resp["resources"]
         end
 
         resources.flatten
