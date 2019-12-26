@@ -148,40 +148,12 @@ module AcademicBenchmarks
       end
 
       def request_search_pages_and_concat_resources(query_params)
-        query_params.reverse_merge!({limit: DEFAULT_PER_PAGE})
-
-        if !query_params[:limit] || query_params[:limit] <= 0
-          raise ArgumentError.new(
-            "limit must be specified as a positive integer"
-          )
-        end
-
         resources = []
         @handle.get_all( path: "/standards", params: query_params ).each do |resp|
           resources << resp["resources"]
         end
 
         resources.flatten
-      end
-
-      def request_page(query_params:, limit:, offset:)
-        query_params.merge!({
-          limit: limit,
-          offset: offset,
-        })
-        resp = @handle.class.get(
-          '/standards',
-          query: query_params.merge({
-            limit: limit,
-            offset: offset,
-          })
-        )
-        if resp.code != 200
-          raise RuntimeError.new(
-            "Received response '#{resp.code}: #{resp.message}' requesting standards from Academic Benchmarks:"
-          )
-        end
-        resp
       end
     end
   end
