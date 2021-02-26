@@ -5,16 +5,15 @@ module AcademicBenchmarks
     class Grade
       include InstVarsToHash
 
-      attr_accessor :high, :low, :seq
+      attr_accessor :high, :low
 
       def self.from_hash(hash)
-        self.new(high: hash["high"], low: hash["low"], seq: hash["seq"])
+        self.new(high: hash["high"], low: hash["low"])
       end
 
-      def initialize(high:, low:, seq:)
+      def initialize(high:, low:)
         @high = high
         @low = low
-        @seq = seq
       end
     end
   end
