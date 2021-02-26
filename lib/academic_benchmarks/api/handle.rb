@@ -52,10 +52,6 @@ module AcademicBenchmarks
         Standards.new(self)
       end
 
-      def sync
-        Sync.new(self)
-      end
-
       def assets
         raise StandardError.new("Sorry, not implemented yet!")
       end
@@ -72,59 +68,7 @@ module AcademicBenchmarks
         raise StandardError.new("Sorry, not implemented yet!")
       end
 
-      def get_all( params:, path: )
-        per_page = 100
-        limit = params.delete( :limit )
-        offset = params.delete( :offset ) || 0
-        responses = []
-
-        get_params = params.merge( auth_query_params )
-
-        request_limit = [per_page, limit].compact.min
-        first_page = request_page(
-          query_params: get_params.merge( limit: request_limit, offset: offset ),
-          path: path
-        )
-        responses << first_page
-
-        total_count = first_page.dig("count")
-        remaining_count = [total_count, limit].compact.min - request_limit
-        offset += request_limit
-
-        while remaining_count > 0
-          request_limit = [remaining_count, per_page].min
-          next_page = request_page(
-            query_params: get_params.merge( limit: request_limit, offset: offset ),
-            path: path
-          )
-          responses << next_page
-          remaining_count -= request_limit
-          offset += request_limit
-        end
-        responses
-      end
-
       private
-
-      def request_page( query_params:, path: )
-        resp = self.class.get( path, query: query_params )
-
-        if resp.code != 200
-          raise RuntimeError.new(
-            "Received response '#{resp.code}: #{resp.message}' requesting standards from Academic Benchmarks:"
-          )
-        end
-        resp
-      end
-
-      def auth_query_params
-        AcademicBenchmarks::Api::Auth.auth_query_params(
-          partner_id: partner_id,
-          partner_key: partner_key,
-          expires: AcademicBenchmarks::Api::Auth.expire_time_in_2_hours,
-          user_id: user_id
-        )
-      end
 
       def api_resp_to_array_of_standards(api_resp)
         api_resp.parsed_response["resources"].inject([]) do |retval, resource|
