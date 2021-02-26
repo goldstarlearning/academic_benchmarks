@@ -10,12 +10,15 @@ module AcademicBenchmarks
 
       STANDARDS_FIELDS = %w[
         guid
-        education_levels.grades.code
+        education_levels.grades
         label
         level
+        seq
         section.guid
         section.descr
+        section.seq
         number.prefix_enhanced
+        number.enhanced
         status
         disciplines.subjects.code
         document.guid
@@ -24,9 +27,11 @@ module AcademicBenchmarks
         document.publication.descr
         document.publication.guid
         document.publication.authorities
+        document.date_modified_utc
         statement.descr
         utilizations.type
         parent
+        date_modified_utc
       ]
 
       def initialize(handle)
@@ -36,6 +41,12 @@ module AcademicBenchmarks
       # TODO: in the future, support OData filtering for flexible querying
       def search(authority_guid: nil, publication_guid: nil)
         raw_search(authority: authority_guid, publication: publication_guid).map do |standard|
+          AcademicBenchmarks::Standards::Standard.new(standard)
+        end
+      end
+
+      def odata_search(opts = {})
+        raw_search(opts).map do |standard|
           AcademicBenchmarks::Standards::Standard.new(standard)
         end
       end

@@ -16,7 +16,8 @@ module AcademicBenchmarks
                     :section,
                     :document, :disciplines,
                     :utilizations,
-                    :parent, :parent_guid
+                    :parent, :parent_guid,
+                    :date_modified_utc
 
       # Before standards are rebranched in Authority#rebranch_children
       # or Document#rebranch_children, they have the following structure.
@@ -33,6 +34,7 @@ module AcademicBenchmarks
         @education_levels = attr_to_val_or_nil(EducationLevels, attributes, "education_levels")
         @label = attributes["label"]
         @level = attributes["level"]
+        @seq = attributes["seq"]
         @section = attr_to_val_or_nil(Section, attributes, "section")
         @number = attr_to_val_or_nil(Number, attributes, "number")
         @status = attributes["status"]
@@ -42,6 +44,7 @@ module AcademicBenchmarks
         @statement = attr_to_val_or_nil(Statement, attributes, "statement")
         @utilizations = attr_to_vals(Utilizations, attributes["utilizations"])
         @parent_guid = data.dig("relationships", "parent", "data", "id")
+        @date_modified_utc = attributes["date_modified_utc"]
       end
 
       alias_method :from_hash, :initialize
