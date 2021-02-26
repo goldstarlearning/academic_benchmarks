@@ -34,7 +34,6 @@ module AcademicBenchmarks
         @authority = attr_to_val_or_nil(Authority, data, "authority")
         @adopt_year = data["adopt_year"]
         @description = data["descr"]
-        @seq = data["seq"]
         @subject_doc = attr_to_val_or_nil(SubjectDoc, data, "subject_doc")
         @has_relations = attr_to_val_or_nil(HasRelations, data, "has_relations")
 
