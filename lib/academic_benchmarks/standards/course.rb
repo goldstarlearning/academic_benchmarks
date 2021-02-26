@@ -5,18 +5,17 @@ module AcademicBenchmarks
     class Course
       include InstVarsToHash
 
-      attr_accessor :guid, :description, :seq
+      attr_accessor :guid, :description
 
       alias_method :descr, :description
 
       def self.from_hash(hash)
-        self.new(description: hash["descr"], guid: hash["guid"], seq: hash["seq"])
+        self.new(description: hash["descr"], guid: hash["guid"])
       end
 
-      def initialize(guid:, description:, seq:)
+      def initialize(guid:, description:)
         @guid = guid
         @description = description
-        @seq = seq
       end
     end
   end
