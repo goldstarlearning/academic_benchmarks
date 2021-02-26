@@ -126,7 +126,7 @@ RSpec.describe Standard do
   end
 
   context "grades" do
-    let(:grade1) { Grade.new(high: "So high", low: "low man", seq: "1") }
+    let(:grade1) { Grade.new(high: "So high", low: "low man") }
 
     it "cascades grades properly" do
       s1 = StandardsHelper.standard
@@ -144,7 +144,7 @@ RSpec.describe Standard do
       expect(last_standard).not_to have_children
       expect(last_standard.instance_variable_get("@grade")).to be_nil
       expect(last_standard.grade).not_to be_nil
-      expect(last_standard.grade.low).to eq(grade1.low)
+      expect(last_standard.grade.low).to  eq(grade1.low)
       expect(last_standard.grade.high).to eq(grade1.high)
     end
   end
