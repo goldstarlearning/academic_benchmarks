@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.academicbenchmarks.com/rest/v3/standards?auth.expires=1451520720&auth.signature=VphNV%2Bv7y8lQ3RgKlaDxbz616GZf47VVC24p9l//7/c=&limit=100&list=authority&offset=0&partner.id=devconnect19&user.id=1
+    uri: https://api.abconnect.certicaconnect.com/rest/v4.1/standards?auth.expires=1612925375&auth.signature=y0CRrc/eRbVwajXaXpPPkOeU/j98w6uPFGwzJ3hFGAU=&facet=document.publication.authorities&limit=0&offset=0&partner.id=devconnect01
     body:
       encoding: US-ASCII
       string: ''
@@ -19,34 +19,48 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 30 Dec 2015 22:12:01 GMT
-      Server:
-      - Apache/2.2.22 (Ubuntu)
-      Cache-Control:
-      - no-store, no-cache, must-revalidate
-      Pragma:
-      - no-cache
+      - Wed, 10 Feb 2021 00:49:36 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1084'
+      Connection:
+      - keep-alive
+      X-Amzn-Requestid:
+      - 40297dbe-2160-4071-b07b-b94e98a484a9
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
       - content-type,accept,origin,ab-internal
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - agQRBEmRIAMFjmQ=
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      X-Amzn-Remapped-Server:
+      - Apache/2.4.7 (Ubuntu)
       Access-Control-Allow-Methods:
-      - GET,POST,DELETE,PUT
+      - GET,POST,DELETE,PUT,PATCH
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Wed, 10 Feb 2021 00:49:36 GMT
       Access-Control-Max-Age:
       - '86400'
-      Connection:
-      - close
-      Content-Type:
-      - application/json; charset=UTF-8
     body:
       encoding: UTF-8
-      string: '{"status":{"imsg":"","emsg":"","category":"OK","code":200},"resources":[{"data":{"authority":{"guid":"A8334A58-901A-11DF-A622-0C319DFF4B22","descr":"Indiana","code":"IN"}}},{"data":{"authority":{"guid":"A83297F2-901A-11DF-A622-0C319DFF4B22","descr":"NGA
-        Center/CCSSO","code":"CC"}}},{"data":{"authority":{"guid":"A834F40C-901A-11DF-A622-0C319DFF4B22","descr":"Ohio","code":"OH"}}}],"count":3,"offset":0,"limit":100,"type":"standard","took":34}'
+      string: '{"links":{"self":"https://api.abconnect.certicaconnect.com/rest/v4.1/standards?facet=document.publication.authorities&limit=0&offset=0"},"data":[],"meta":{"facets":[{"count":7,"facet":"document.publication.authorities","details":[{"data":{"guid":"9128B2EC-F1B9-11E5-862E-0938DC287387","descr":"Indiana
+        DOE","acronym":null},"count":5079},{"count":2454,"data":{"guid":"A83297F2-901A-11DF-A622-0C319DFF4B22","descr":"NGA
+        Center/CCSSO","acronym":"CC"}},{"count":2372,"data":{"guid":"9127A816-F1B9-11E5-862E-0938DC287387","acronym":null,"descr":"Ohio
+        DOE"}},{"count":2030,"data":{"descr":"Florida DOE","acronym":"FDOE","guid":"9127FF50-F1B9-11E5-862E-0938DC287387"}},{"data":{"guid":"9129A0F8-F1B9-11E5-862E-0938DC287387","descr":"Kansas
+        State Department of Education","acronym":"KSDE"},"count":1136},{"data":{"guid":"912A8036-F1B9-11E5-862E-0938DC287387","acronym":"ALSDE","descr":"Alabama
+        State Department of Education"},"count":1041},{"count":571,"data":{"guid":"095383F6-BBCB-11E1-9321-88419DFF4B22","descr":"Achieve","acronym":null}}]}],"took":104,"offset":0,"limit":0,"count":14683}}'
     http_version: 
-  recorded_at: Wed, 30 Dec 2015 22:12:00 GMT
+  recorded_at: Wed, 10 Feb 2021 00:49:36 GMT
 - request:
     method: get
-    uri: https://api.academicbenchmarks.com/rest/v3/standards?auth.expires=1451520720&auth.signature=VphNV%2Bv7y8lQ3RgKlaDxbz616GZf47VVC24p9l//7/c=&limit=100&list=authority&offset=0&partner.id=devconnect19&user.id=1
+    uri: https://api.abconnect.certicaconnect.com/rest/v4.1/standards?auth.expires=1612925376&auth.signature=YjIZqdpImG1gvjrlPb4foWEORrpohKPOUcCOLV7h1sw=&facet=document.publication.authorities&limit=0&offset=0&partner.id=devconnect01
     body:
       encoding: US-ASCII
       string: ''
@@ -63,29 +77,44 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 30 Dec 2015 22:12:02 GMT
-      Server:
-      - Apache/2.2.22 (Ubuntu)
-      Cache-Control:
-      - no-store, no-cache, must-revalidate
-      Pragma:
-      - no-cache
+      - Wed, 10 Feb 2021 00:49:36 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1084'
+      Connection:
+      - keep-alive
+      X-Amzn-Requestid:
+      - e047239b-f61e-4d5b-b30d-2511cb5a6d57
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
       - content-type,accept,origin,ab-internal
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - agQRHFUloAMFfHw=
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      X-Amzn-Remapped-Server:
+      - Apache/2.4.7 (Ubuntu)
       Access-Control-Allow-Methods:
-      - GET,POST,DELETE,PUT
+      - GET,POST,DELETE,PUT,PATCH
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Wed, 10 Feb 2021 00:49:36 GMT
       Access-Control-Max-Age:
       - '86400'
-      Connection:
-      - close
-      Content-Type:
-      - application/json; charset=UTF-8
     body:
       encoding: UTF-8
-      string: '{"status":{"imsg":"","emsg":"","category":"OK","code":200},"resources":[{"data":{"authority":{"guid":"A8334A58-901A-11DF-A622-0C319DFF4B22","descr":"Indiana","code":"IN"}}},{"data":{"authority":{"guid":"A83297F2-901A-11DF-A622-0C319DFF4B22","descr":"NGA
-        Center/CCSSO","code":"CC"}}},{"data":{"authority":{"guid":"A834F40C-901A-11DF-A622-0C319DFF4B22","descr":"Ohio","code":"OH"}}}],"count":3,"offset":0,"limit":100,"type":"standard","took":31}'
+      string: '{"links":{"self":"https://api.abconnect.certicaconnect.com/rest/v4.1/standards?facet=document.publication.authorities&limit=0&offset=0"},"data":[],"meta":{"took":107,"facets":[{"details":[{"data":{"descr":"Indiana
+        DOE","acronym":null,"guid":"9128B2EC-F1B9-11E5-862E-0938DC287387"},"count":5079},{"data":{"descr":"NGA
+        Center/CCSSO","acronym":"CC","guid":"A83297F2-901A-11DF-A622-0C319DFF4B22"},"count":2454},{"data":{"guid":"9127A816-F1B9-11E5-862E-0938DC287387","descr":"Ohio
+        DOE","acronym":null},"count":2372},{"data":{"guid":"9127FF50-F1B9-11E5-862E-0938DC287387","descr":"Florida
+        DOE","acronym":"FDOE"},"count":2030},{"count":1136,"data":{"guid":"9129A0F8-F1B9-11E5-862E-0938DC287387","acronym":"KSDE","descr":"Kansas
+        State Department of Education"}},{"data":{"guid":"912A8036-F1B9-11E5-862E-0938DC287387","acronym":"ALSDE","descr":"Alabama
+        State Department of Education"},"count":1041},{"count":571,"data":{"acronym":null,"descr":"Achieve","guid":"095383F6-BBCB-11E1-9321-88419DFF4B22"}}],"facet":"document.publication.authorities","count":7}],"count":14683,"limit":0,"offset":0}}'
     http_version: 
-  recorded_at: Wed, 30 Dec 2015 22:12:01 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Wed, 10 Feb 2021 00:49:36 GMT
+recorded_with: VCR 3.0.3

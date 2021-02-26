@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.academicbenchmarks.com/rest/v3/standards?auth.expires=1454445552&auth.signature=yK%2BLCYJLESK5rNya0wjPAxDVF6SbIuxOKpp69HYjOwI=&limit=100&list=authority&offset=0&partner.id=devconnect02&user.id=1
+    uri: https://api.abconnect.certicaconnect.com/rest/v4.1/standards?auth.expires=1612925537&auth.signature=FkU34l0UVIBW%2BLlxn4TYmSRjRvTtwx5qjjV1ZQQqxN0=&facet=document.publication.authorities&limit=0&offset=0&partner.id=devconnect01
     body:
       encoding: US-ASCII
       string: ''
@@ -18,37 +18,49 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - content-type,accept,origin,ab-internal
-      Access-Control-Allow-Methods:
-      - GET,POST,DELETE,PUT
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '86400'
-      Cache-Control:
-      - no-store, no-cache, must-revalidate
+      Date:
+      - Wed, 10 Feb 2021 00:52:18 GMT
       Content-Type:
       - application/json; charset=UTF-8
-      Date:
-      - Tue, 02 Feb 2016 18:39:13 GMT
-      Pragma:
-      - no-cache
-      Server:
-      - Apache/2.4.7 (Ubuntu)
       Content-Length:
-      - '949'
+      - '1084'
       Connection:
       - keep-alive
+      X-Amzn-Requestid:
+      - a10f25cb-5468-4d51-b36f-edacae7e72a4
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - content-type,accept,origin,ab-internal
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - agQqVEiwoAMF4jQ=
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      X-Amzn-Remapped-Server:
+      - Apache/2.4.7 (Ubuntu)
+      Access-Control-Allow-Methods:
+      - GET,POST,DELETE,PUT,PATCH
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Wed, 10 Feb 2021 00:52:18 GMT
+      Access-Control-Max-Age:
+      - '86400'
     body:
       encoding: UTF-8
-      string: '{"status":{"emsg":"","category":"OK","code":200,"imsg":""},"resources":[{"data":{"authority":{"descr":"Achieve","code":"NRC","guid":"095383F6-BBCB-11E1-9321-88419DFF4B22"}}},{"data":{"authority":{"descr":"Alabama","code":"AL","guid":"A8325A6C-901A-11DF-A622-0C319DFF4B22"}}},{"data":{"authority":{"code":"FL","descr":"Florida","guid":"A832E0B8-901A-11DF-A622-0C319DFF4B22"}}},{"data":{"authority":{"guid":"A8334A58-901A-11DF-A622-0C319DFF4B22","code":"IN","descr":"Indiana"}}},{"data":{"authority":{"descr":"Kansas","code":"KS","guid":"A833636C-901A-11DF-A622-0C319DFF4B22"}}},{"data":{"authority":{"guid":"A833C528-901A-11DF-A622-0C319DFF4B22","code":"MD","descr":"Maryland"}}},{"data":{"authority":{"code":"CC","descr":"NGA
-        Center/CCSSO","guid":"A83297F2-901A-11DF-A622-0C319DFF4B22"}}},{"data":{"authority":{"guid":"A834F40C-901A-11DF-A622-0C319DFF4B22","descr":"Ohio","code":"OH"}}}],"count":8,"offset":0,"limit":100,"type":"standard","took":23}'
+      string: '{"links":{"self":"https://api.abconnect.certicaconnect.com/rest/v4.1/standards?facet=document.publication.authorities&limit=0&offset=0"},"data":[],"meta":{"offset":0,"count":14683,"took":121,"facets":[{"count":7,"facet":"document.publication.authorities","details":[{"data":{"acronym":null,"descr":"Indiana
+        DOE","guid":"9128B2EC-F1B9-11E5-862E-0938DC287387"},"count":5079},{"data":{"guid":"A83297F2-901A-11DF-A622-0C319DFF4B22","acronym":"CC","descr":"NGA
+        Center/CCSSO"},"count":2454},{"count":2372,"data":{"descr":"Ohio DOE","acronym":null,"guid":"9127A816-F1B9-11E5-862E-0938DC287387"}},{"data":{"descr":"Florida
+        DOE","acronym":"FDOE","guid":"9127FF50-F1B9-11E5-862E-0938DC287387"},"count":2030},{"count":1136,"data":{"descr":"Kansas
+        State Department of Education","acronym":"KSDE","guid":"9129A0F8-F1B9-11E5-862E-0938DC287387"}},{"data":{"descr":"Alabama
+        State Department of Education","acronym":"ALSDE","guid":"912A8036-F1B9-11E5-862E-0938DC287387"},"count":1041},{"count":571,"data":{"guid":"095383F6-BBCB-11E1-9321-88419DFF4B22","acronym":null,"descr":"Achieve"}}]}],"limit":0}}'
     http_version: 
-  recorded_at: Tue, 02 Feb 2016 18:39:12 GMT
+  recorded_at: Wed, 10 Feb 2021 00:52:18 GMT
 - request:
     method: get
-    uri: https://api.academicbenchmarks.com/rest/v3/standards?auth.expires=1454445552&auth.signature=yK%2BLCYJLESK5rNya0wjPAxDVF6SbIuxOKpp69HYjOwI=&limit=100&list=document&offset=0&partner.id=devconnect02&user.id=1
+    uri: https://api.abconnect.certicaconnect.com/rest/v4.1/standards?auth.expires=1612925538&auth.signature=zwai3Tj2XyWA3Udw7lrYw0KiH5Ximf0vN1txecMS1t4=&facet=document.publication&limit=0&offset=0&partner.id=devconnect01
     body:
       encoding: US-ASCII
       string: ''
@@ -64,39 +76,48 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - content-type,accept,origin,ab-internal
-      Access-Control-Allow-Methods:
-      - GET,POST,DELETE,PUT
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '86400'
-      Cache-Control:
-      - no-store, no-cache, must-revalidate
+      Date:
+      - Wed, 10 Feb 2021 00:52:18 GMT
       Content-Type:
       - application/json; charset=UTF-8
-      Date:
-      - Tue, 02 Feb 2016 18:39:13 GMT
-      Pragma:
-      - no-cache
-      Server:
-      - Apache/2.4.7 (Ubuntu)
       Content-Length:
-      - '1058'
+      - '1407'
       Connection:
       - keep-alive
+      X-Amzn-Requestid:
+      - 874cb491-9cbe-477e-aaf3-a7bafd8fff7e
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - content-type,accept,origin,ab-internal
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - agQqbFA6IAMF82g=
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      X-Amzn-Remapped-Server:
+      - Apache/2.4.7 (Ubuntu)
+      Access-Control-Allow-Methods:
+      - GET,POST,DELETE,PUT,PATCH
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Wed, 10 Feb 2021 00:52:18 GMT
+      Access-Control-Max-Age:
+      - '86400'
     body:
       encoding: UTF-8
-      string: '{"status":{"emsg":"","code":200,"category":"OK","imsg":""},"resources":[{"data":{"document":{"title":"Academic
-        Standards","guid":"993690BE-C0DA-11DA-BD64-B7CEA439013B"}}},{"data":{"document":{"title":"College
-        and Career Ready Standards","guid":"1FC58C24-ACC2-11E0-BB03-D6D7D51F4EFC"}}},{"data":{"document":{"title":"Common
-        Core State Standards","guid":"964E0FEE-AD71-11DE-9BF2-C9169DFF4B22"}}},{"data":{"document":{"guid":"9935E84E-C0DA-11DA-844D-F1B58A7EE3C7","title":"Course
-        of Study","acronym":"COS"}}},{"data":{"document":{"guid":"E1D5D8B6-DA22-11E2-95B3-3B359DFF4B22","title":"Learning
-        Standards"}}},{"data":{"document":{"guid":"209823E4-2FB7-11DE-BA91-15719DFF4B22","acronym":"NGSSS","title":"Next
-        Generation Sunshine State Standards"}}},{"data":{"document":{"guid":"c37632ab-f617-4feb-9dcb-74cf8b3dc281","title":"NGSS
-        Arranged by Disciplinary Core Idea (DCI)"}}},{"data":{"document":{"title":"NGSS
-        Arranged by Disciplinary Core Idea (DCI)","guid":"39294526-BF3F-11E1-8A35-552B9DFF4B22"}}}],"count":8,"offset":0,"limit":100,"type":"standard","took":47}'
+      string: '{"links":{"self":"https://api.abconnect.certicaconnect.com/rest/v4.1/standards?facet=document.publication&limit=0&offset=0"},"data":[],"meta":{"offset":0,"count":14683,"took":126,"facets":[{"count":7,"facet":"document.publication","details":[{"count":5079,"data":{"acronym":null,"descr":"Academic
+        Standards","title":"Academic Standards","guid":"993690BE-C0DA-11DA-BD64-B7CEA439013B"}},{"count":2454,"data":{"title":"Common
+        Core State Standards","descr":"Common Core State Standards","acronym":"CCSS","guid":"964E0FEE-AD71-11DE-9BF2-C9169DFF4B22"}},{"data":{"descr":"Learning
+        Standards","title":"Learning Standards","acronym":null,"guid":"E1D5D8B6-DA22-11E2-95B3-3B359DFF4B22"},"count":2372},{"count":2030,"data":{"acronym":"NGSSS","descr":"Next
+        Generation Sunshine State Standards","title":"Next Generation Sunshine State
+        Standards","guid":"209823E4-2FB7-11DE-BA91-15719DFF4B22"}},{"data":{"guid":"1FC58C24-ACC2-11E0-BB03-D6D7D51F4EFC","acronym":"KCCRS","descr":"College
+        and Career Ready Standards","title":"College and Career Ready Standards"},"count":1136},{"data":{"title":"Course
+        of Study","descr":"Course of Study","acronym":"COS","guid":"9935E84E-C0DA-11DA-844D-F1B58A7EE3C7"},"count":1041},{"data":{"acronym":null,"descr":"NGSS
+        Arranged by Disciplinary Core Idea (DCI)","title":"NGSS Arranged by Disciplinary
+        Core Idea (DCI)","guid":"39294526-BF3F-11E1-8A35-552B9DFF4B22"},"count":571}]}],"limit":0}}'
     http_version: 
-  recorded_at: Tue, 02 Feb 2016 18:39:13 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Wed, 10 Feb 2021 00:52:18 GMT
+recorded_with: VCR 3.0.3

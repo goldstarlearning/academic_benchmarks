@@ -1,901 +1,1393 @@
 {
-  "status": {
-    "imsg": "",
-    "emsg": "",
-    "category": "OK",
-    "code": 200
+  "links": {
+    "next": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards?fields%5Bstandards%5D=guid,education_levels.grades.code,label,level,section.guid,section.descr,number.raw,number.enhanced,status,disciplines.subjects.code,document.guid,document.descr,document.adopt_year,document.publication.descr,document.publication.guid,document.publication.authorities,statement.descr,utilizations.type,parent&limit=20&offset=20",
+    "last": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards?fields%5Bstandards%5D=guid,education_levels.grades.code,label,level,section.guid,section.descr,number.raw,number.enhanced,status,disciplines.subjects.code,document.guid,document.descr,document.adopt_year,document.publication.descr,document.publication.guid,document.publication.authorities,statement.descr,utilizations.type,parent&limit=20&offset=14600",
+    "self": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards?fields%5Bstandards%5D=guid,education_levels.grades.code,label,level,section.guid,section.descr,number.raw,number.enhanced,status,disciplines.subjects.code,document.guid,document.descr,document.adopt_year,document.publication.descr,document.publication.guid,document.publication.authorities,statement.descr,utilizations.type,parent&limit=20"
   },
-  "resources": [
+  "data": [
     {
-      "data": {
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEB79A48-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
+      "id": "0003631b-ca53-4985-8963-b7907320f8d9",
+      "attributes": {
         "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
+          "adopt_year": "2010",
+          "descr": "Social Studies",
+          "publication": {
+            "guid": "9935E84E-C0DA-11DA-844D-F1B58A7EE3C7",
+            "descr": "Course of Study",
+            "authorities": [
+              {
+                "acronym": "ALSDE",
+                "guid": "912A8036-F1B9-11E5-862E-0938DC287387",
+                "descr": "Alabama State Department of Education"
+              }
+            ]
+          },
+          "guid": "fe79c173-62e4-490b-ad02-a9ee8db932ad"
         },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
+        "number": {
+          "raw": null,
+          "enhanced": "8.5"
         },
-        "guid": "CEB79A48-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEC2CF6C-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "N",
-        "descr": "Key Ideas and Details",
+        "guid": "0003631b-ca53-4985-8963-b7907320f8d9",
         "level": 2,
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
+        "status": "active",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "5"
+            }
+          ]
+        },
+        "section": {
+          "descr": "Fifth Grade - United States Studies: Beginnings to the Industrial Revolution",
+          "guid": "b6a72362-7ca2-4f00-85ef-6ff44917460b"
+        },
+        "label": null,
+        "statement": {
+          "descr": "Locating on a map major battle sites of the American Revolution, including the battles of Lexington and Concord, Bunker Hill, Saratoga, and Yorktown"
+        },
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SOC"
+            }
+          ]
+        },
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ]
+      },
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/0003631b-ca53-4985-8963-b7907320f8d9/parent"
+          },
+          "data": {
+            "id": "e248c361-6dd7-40fe-9d3e-0a44e2710e93",
+            "type": "standards"
+          }
         }
       }
     },
     {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.1",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEB87C92-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEB87C92-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
+      "type": "standards",
+      "relationships": {
         "parent": {
-          "guid": "CEB79A48-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Read closely to determine what the text says explicitly and to make logical inferences from it; cite specific textual evidence when writing or speaking to support conclusions drawn from the text.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
+          "data": {
+            "type": "standards",
+            "id": "c041ac03-186b-4a0e-a9e5-7de50537124f"
+          },
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/00040511-6bf3-4955-8e43-8ce30c0618eb/parent"
+          }
         }
-      }
-    },
-    {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.2",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEB8EE66-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
+      },
+      "attributes": {
+        "section": {
+          "descr": "Grade 3",
+          "guid": "45947e3c-5ce7-4651-a3d4-7183db79df21"
         },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
+        "label": "Standard",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "3"
+            }
+          ]
         },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEB8EE66-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEB79A48-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Determine central ideas or themes of a text and analyze their development; summarize the key supporting details and ideas.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.3",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEB96684-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEB96684-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEB79A48-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Analyze how and why individuals, events, and ideas develop and interact over the course of a text.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEBA4798-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEBA4798-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEC2CF6C-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "N",
-        "descr": "Craft and Structure",
+        "status": "active",
         "level": 2,
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
+        "guid": "00040511-6bf3-4955-8e43-8ce30c0618eb",
+        "document": {
+          "guid": "5bc5bcfc-a222-42fd-b471-e616205d4e90",
+          "adopt_year": "2014",
+          "publication": {
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "descr": "Academic Standards",
+            "authorities": [
+              {
+                "acronym": null,
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "descr": "Indiana DOE"
+              }
+            ]
+          },
+          "descr": "Mathematics"
+        },
+        "number": {
+          "enhanced": "3.C.2",
+          "raw": "3.C.2"
+        },
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "MATH"
+            }
+          ]
+        },
+        "statement": {
+          "descr": "Represent the concept of multiplication of whole numbers with the following models: equal-sized groups, arrays, area models, and equal \"jumps\" on a number line. Understand the properties of 0 and 1 in multiplication."
         }
-      }
+      },
+      "id": "00040511-6bf3-4955-8e43-8ce30c0618eb"
     },
     {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.4",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEBAB958-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEBAB958-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEBA4798-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Interpret words and phrases as they are used in a text, including determining technical, connotative, and figurative meanings, and analyze how specific word choices shape meaning or tone.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.5",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEBB9AA8-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEBB9AA8-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEBA4798-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Analyze the structure of texts, including how specific sentences, paragraphs, and larger portions of the text (e.g., a section, chapter, scene, or stanza) relate to each other and the whole.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.6",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEBC89F4-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEBC89F4-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEBA4798-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Assess how point of view or purpose shapes the content and style of a text.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEBCFB14-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEBCFB14-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEC2CF6C-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "N",
-        "descr": "Integration of Knowledge and Ideas",
-        "level": 2,
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.7",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEBDDCA0-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEBDDCA0-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEBCFB14-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Integrate and evaluate content presented in diverse media and formats, including visually and quantitatively, as well as in words.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.8",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEBE4D52-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEBE4D52-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEBCFB14-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Delineate and evaluate the argument and specific claims in a text, including the validity of the reasoning as well as the relevance and sufficiency of the evidence.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.9",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEBF37B2-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEBF37B2-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEBCFB14-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Analyze how two or more texts address similar themes or topics in order to build knowledge or to compare the approaches the authors take.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEBFA968-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEBFA968-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEC2CF6C-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "N",
-        "descr": "Range of Reading and Level of Text Complexity",
-        "level": 2,
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R.10",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEC08B44-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEC08B44-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEBFA968-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Read and comprehend complex literary and informational texts independently and proficiently.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
-        }
-      }
-    },
-    {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.R",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEC2CF6C-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEC2CF6C-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "N",
-        "descr": "Reading",
+      "attributes": {
+        "status": "active",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "11"
+            },
+            {
+              "code": "12"
+            }
+          ]
+        },
+        "section": {
+          "guid": "a2a28063-e312-43ef-83e7-a4652a0d3e4f",
+          "descr": "Grades 11-12 Literacy: Science/Technical Subjects"
+        },
+        "label": null,
         "level": 1,
-        "label": "Strand",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
+        "document": {
+          "adopt_year": "2014",
+          "descr": "English/Language Arts",
+          "publication": {
+            "authorities": [
+              {
+                "descr": "Indiana DOE",
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "acronym": null
+              }
+            ],
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "descr": "Academic Standards"
+          },
+          "guid": "41ba4f1d-2568-4a2b-94d5-85c5d3dc22fc"
+        },
+        "number": {
+          "enhanced": null,
+          "raw": null
+        },
+        "guid": "0007AE84-DE1E-45BC-81D1-F8AFE5786AC6",
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "LANG"
+            }
+          ]
+        },
+        "statement": {
+          "descr": "Structural Elements and Organization (Reading)"
         }
+      },
+      "relationships": {
+        "parent": {
+          "data": {}
+        }
+      },
+      "type": "standards",
+      "id": "0007AE84-DE1E-45BC-81D1-F8AFE5786AC6"
+    },
+    {
+      "id": "000fbefb-fa7b-466b-a93b-ce11705deda4",
+      "relationships": {
+        "parent": {
+          "data": {
+            "type": "standards",
+            "id": "98e725a3-617e-4e62-a7a9-9b629661fcfd"
+          },
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/000fbefb-fa7b-466b-a93b-ce11705deda4/parent"
+          }
+        }
+      },
+      "type": "standards",
+      "attributes": {
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SOC"
+            }
+          ]
+        },
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "statement": {
+          "descr": "Describing different approaches for explaining mental illness, including biological and medical, cognitive, and sociocultural models"
+        },
+        "label": null,
+        "section": {
+          "descr": "Psychology",
+          "guid": "0522e215-d5d8-4505-81a8-de2e6ab5945a"
+        },
+        "education_levels": {
+          "grades": [
+            {
+              "code": "9"
+            },
+            {
+              "code": "10"
+            },
+            {
+              "code": "11"
+            },
+            {
+              "code": "12"
+            }
+          ]
+        },
+        "status": "active",
+        "guid": "000fbefb-fa7b-466b-a93b-ce11705deda4",
+        "number": {
+          "raw": null,
+          "enhanced": "15.2"
+        },
+        "document": {
+          "adopt_year": "2010",
+          "descr": "Social Studies",
+          "publication": {
+            "authorities": [
+              {
+                "acronym": "ALSDE",
+                "descr": "Alabama State Department of Education",
+                "guid": "912A8036-F1B9-11E5-862E-0938DC287387"
+              }
+            ],
+            "guid": "9935E84E-C0DA-11DA-844D-F1B58A7EE3C7",
+            "descr": "Course of Study"
+          },
+          "guid": "fe79c173-62e4-490b-ad02-a9ee8db932ad"
+        },
+        "level": 2
       }
     },
     {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.W",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEC34096-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
+      "attributes": {
+        "level": 3,
         "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
+          "guid": "5bc5bcfc-a222-42fd-b471-e616205d4e90",
+          "descr": "Mathematics",
+          "publication": {
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "descr": "Academic Standards",
+            "authorities": [
+              {
+                "acronym": null,
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "descr": "Indiana DOE"
+              }
+            ]
+          },
+          "adopt_year": "2014"
         },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
+        "number": {
+          "enhanced": "C.I.6.a",
+          "raw": "a."
         },
-        "guid": "CEC34096-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
+        "guid": "001cda28-8746-49a8-ba76-042aef80449e",
+        "status": "active",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "9"
+            },
+            {
+              "code": "10"
+            },
+            {
+              "code": "11"
+            },
+            {
+              "code": "12"
+            }
+          ]
         },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
+        "section": {
+          "guid": "ffd04540-d91d-42c0-ab5e-ce890635c083",
+          "descr": "Calculus"
         },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
+        "label": null,
+        "statement": {
+          "descr": "∫(from 𝑎 to 𝑏) [𝑓(𝑥) + 𝑔(𝑥)]𝑑𝑥 = ∫(from 𝑎 to 𝑏) 𝑓(𝑥)𝑑𝑥 + ∫(from 𝑎 to 𝑏) 𝑔(𝑥)𝑑𝑥"
         },
-        "deepest": "N",
-        "descr": "Writing",
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "MATH"
+            }
+          ]
+        }
+      },
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/001cda28-8746-49a8-ba76-042aef80449e/parent"
+          },
+          "data": {
+            "type": "standards",
+            "id": "d19c22f8-c106-491d-8202-b22c6bbcdce2"
+          }
+        }
+      },
+      "id": "001cda28-8746-49a8-ba76-042aef80449e"
+    },
+    {
+      "attributes": {
+        "statement": {
+          "descr": "Number Sense, Expressions, and Computation"
+        },
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "MATH"
+            }
+          ]
+        },
         "level": 1,
+        "guid": "00259A1C-BDD5-4EF7-97EE-7F9284190854",
+        "document": {
+          "adopt_year": "2014",
+          "publication": {
+            "descr": "Academic Standards",
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "authorities": [
+              {
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "descr": "Indiana DOE",
+                "acronym": null
+              }
+            ]
+          },
+          "descr": "Mathematics",
+          "guid": "5bc5bcfc-a222-42fd-b471-e616205d4e90"
+        },
+        "number": {
+          "raw": null,
+          "enhanced": "MA10.NSEC"
+        },
+        "section": {
+          "guid": "77120CF2-5831-11E7-B7A9-F940CDC8CA83",
+          "descr": "Math 10"
+        },
         "label": "Strand",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
+        "status": "obsolete",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "9"
+            },
+            {
+              "code": "10"
+            },
+            {
+              "code": "11"
+            },
+            {
+              "code": "12"
+            }
+          ]
         }
-      }
+      },
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "data": {}
+        }
+      },
+      "id": "00259A1C-BDD5-4EF7-97EE-7F9284190854"
     },
     {
-      "data": {
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEC3B102-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
+      "attributes": {
+        "status": "active",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "9"
+            },
+            {
+              "code": "10"
+            },
+            {
+              "code": "11"
+            },
+            {
+              "code": "12"
+            }
+          ]
+        },
+        "label": null,
+        "section": {
+          "descr": "Mass Media",
+          "guid": "ED0C8707-C6DE-11EA-BB5B-0E20088BB29A"
         },
         "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
+          "adopt_year": "2014",
+          "descr": "English/Language Arts",
+          "publication": {
+            "descr": "Academic Standards",
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "authorities": [
+              {
+                "descr": "Indiana DOE",
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "acronym": null
+              }
+            ]
+          },
+          "guid": "41ba4f1d-2568-4a2b-94d5-85c5d3dc22fc"
         },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
+        "number": {
+          "enhanced": null,
+          "raw": null
         },
-        "guid": "CEC3B102-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
-        "parent": {
-          "guid": "CEC34096-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "N",
-        "descr": "Text Types and Purposes",
+        "guid": "0027B659-9D17-4DB4-85C2-B7AFB2D2E461",
         "level": 2,
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "LANG"
+            }
+          ]
+        },
+        "statement": {
+          "descr": "Learning Outcome"
+        }
+      },
+      "relationships": {
+        "parent": {
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/0027B659-9D17-4DB4-85C2-B7AFB2D2E461/parent"
+          },
+          "data": {
+            "id": "45133D7B-54E3-4D75-80E6-66E29B6CAEC2",
+            "type": "standards"
+          }
+        }
+      },
+      "type": "standards",
+      "id": "0027B659-9D17-4DB4-85C2-B7AFB2D2E461"
+    },
+    {
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "data": {
+            "id": "AF438618-CCB8-11DD-A7C8-69619DFF4B22",
+            "type": "standards"
+          },
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/0027f904-ca1f-4559-826d-cc5962dbf3a3/parent"
+          }
+        }
+      },
+      "attributes": {
+        "statement": {
+          "descr": "Examples may include, but are not limited to, 100 Percent Americanism."
+        },
+        "utilizations": [
+          {
+            "type": "example"
+          }
+        ],
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SOC"
+            }
+          ]
+        },
+        "level": 4,
+        "number": {
+          "enhanced": null,
+          "raw": "Remarks/Examples:"
+        },
+        "document": {
+          "guid": "B8D35264-C801-11DD-B8FE-F90E9DFF4B22",
+          "adopt_year": "2008",
+          "descr": "Social Studies",
+          "publication": {
+            "guid": "209823E4-2FB7-11DE-BA91-15719DFF4B22",
+            "descr": "Next Generation Sunshine State Standards",
+            "authorities": [
+              {
+                "acronym": "FDOE",
+                "guid": "9127FF50-F1B9-11E5-862E-0938DC287387",
+                "descr": "Florida DOE"
+              }
+            ]
+          }
+        },
+        "guid": "0027f904-ca1f-4559-826d-cc5962dbf3a3",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "9"
+            },
+            {
+              "code": "10"
+            },
+            {
+              "code": "11"
+            },
+            {
+              "code": "12"
+            }
+          ]
+        },
+        "status": "active",
+        "label": null,
+        "section": {
+          "descr": "Grades: 9-12 Revised February 2014",
+          "guid": "B8D25062-C801-11DD-B8FE-F90E9DFF4B22"
+        }
+      },
+      "id": "0027f904-ca1f-4559-826d-cc5962dbf3a3"
+    },
+    {
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "data": {
+            "type": "standards",
+            "id": "2ea8a798-6843-4fd6-a26e-5d45520fccbc"
+          },
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/0032f165-b77a-45ad-b69d-cab9048f7dc9/parent"
+          }
+        }
+      },
+      "attributes": {
+        "level": 4,
+        "document": {
+          "guid": "B8D35264-C801-11DD-B8FE-F90E9DFF4B22",
+          "publication": {
+            "authorities": [
+              {
+                "acronym": "FDOE",
+                "guid": "9127FF50-F1B9-11E5-862E-0938DC287387",
+                "descr": "Florida DOE"
+              }
+            ],
+            "descr": "Next Generation Sunshine State Standards",
+            "guid": "209823E4-2FB7-11DE-BA91-15719DFF4B22"
+          },
+          "descr": "Social Studies",
+          "adopt_year": "2008"
+        },
+        "number": {
+          "raw": "Remarks/Examples:",
+          "enhanced": null
+        },
+        "guid": "0032f165-b77a-45ad-b69d-cab9048f7dc9",
+        "status": "active",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "9"
+            },
+            {
+              "code": "10"
+            },
+            {
+              "code": "11"
+            },
+            {
+              "code": "12"
+            }
+          ]
+        },
+        "section": {
+          "guid": "B8D25062-C801-11DD-B8FE-F90E9DFF4B22",
+          "descr": "Grades: 9-12 Revised February 2014"
+        },
+        "label": null,
+        "statement": {
+          "descr": "Write a paragraph explaining why a store might advertise the price of a flat screen TV expressed as an amount per day or week rather than the actual full price."
+        },
+        "utilizations": [
+          {
+            "type": "example"
+          }
+        ],
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SOC"
+            }
+          ]
+        }
+      },
+      "id": "0032f165-b77a-45ad-b69d-cab9048f7dc9"
+    },
+    {
+      "id": "003cd2e5-688e-4c25-b63a-56000822ec18",
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/003cd2e5-688e-4c25-b63a-56000822ec18/parent"
+          },
+          "data": {
+            "type": "standards",
+            "id": "cbef5738-b35c-4237-987c-68997fbd6365"
+          }
+        }
+      },
+      "attributes": {
+        "section": {
+          "guid": "14e063e8-4bdb-4561-a4d1-055e97d4284c",
+          "descr": "Grade 1"
+        },
+        "label": null,
+        "status": "active",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "1"
+            }
+          ]
+        },
+        "guid": "003cd2e5-688e-4c25-b63a-56000822ec18",
+        "document": {
+          "guid": "41ba4f1d-2568-4a2b-94d5-85c5d3dc22fc",
+          "adopt_year": "2014",
+          "publication": {
+            "authorities": [
+              {
+                "acronym": null,
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "descr": "Indiana DOE"
+              }
+            ],
+            "descr": "Academic Standards",
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B"
+          },
+          "descr": "English/Language Arts"
+        },
+        "number": {
+          "raw": "1.W.6.2b",
+          "enhanced": "1.W.6.2b"
+        },
+        "level": 4,
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "LANG"
+            }
+          ]
+        },
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "statement": {
+          "descr": "Punctuation"
         }
       }
     },
     {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.W.1",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEC49A36-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "data": {
+            "type": "standards",
+            "id": "c8d13204-4b92-482e-833e-255459ef8319"
+          },
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/00461fc5-3b6b-4d34-9e01-e1f46f200e90/parent"
+          }
+        }
+      },
+      "attributes": {
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "MATH"
+            }
+          ]
+        },
+        "statement": {
+          "descr": "Identify the value of a penny, nickel, dime, and a collection of pennies, nickels, and dimes."
+        },
+        "section": {
+          "guid": "341d2c67-5cb1-4370-93f8-c9467c5b85fd",
+          "descr": "Grade 1"
+        },
+        "label": "Standard",
+        "status": "active",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "1"
+            }
+          ]
+        },
+        "level": 2,
+        "guid": "00461fc5-3b6b-4d34-9e01-e1f46f200e90",
+        "document": {
+          "adopt_year": "2014",
+          "descr": "Mathematics",
+          "publication": {
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "descr": "Academic Standards",
+            "authorities": [
+              {
+                "acronym": null,
+                "descr": "Indiana DOE",
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387"
+              }
+            ]
+          },
+          "guid": "5bc5bcfc-a222-42fd-b471-e616205d4e90"
+        },
+        "number": {
+          "raw": "1.M.3",
+          "enhanced": "1.M.3"
+        }
+      },
+      "id": "00461fc5-3b6b-4d34-9e01-e1f46f200e90"
+    },
+    {
+      "id": "00492524-7211-4dbe-9db2-428d584ac49a",
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/00492524-7211-4dbe-9db2-428d584ac49a/parent"
+          },
+          "data": {
+            "type": "standards",
+            "id": "88ee74f2-7f80-4289-bc59-6a093fc4df66"
+          }
+        }
+      },
+      "attributes": {
+        "statement": {
+          "descr": "Plan and conduct an investigation to describe and classify different kinds of materials by their observable properties."
+        },
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SCI"
+            }
+          ]
+        },
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "document": {
+          "publication": {
+            "authorities": [
+              {
+                "acronym": "KSDE",
+                "descr": "Kansas State Department of Education",
+                "guid": "9129A0F8-F1B9-11E5-862E-0938DC287387"
+              }
+            ],
+            "descr": "College and Career Ready Standards",
+            "guid": "1FC58C24-ACC2-11E0-BB03-D6D7D51F4EFC"
+          },
+          "descr": "Science Arranged by Disciplinary Core Idea (DCI)",
+          "adopt_year": "2013",
+          "guid": "93f0db56-3a57-4177-ac9d-118ea7e442a6"
+        },
+        "number": {
+          "raw": "2-PS1-1.",
+          "enhanced": "2-PS1-1"
+        },
+        "guid": "00492524-7211-4dbe-9db2-428d584ac49a",
+        "level": 2,
+        "education_levels": {
+          "grades": [
+            {
+              "code": "2"
+            }
+          ]
+        },
+        "status": "active",
+        "section": {
+          "guid": "e08b472d-7179-41a2-88ef-4fc87b16d77a",
+          "descr": "Second Grade"
+        },
+        "label": "Performance Expectation"
+      }
+    },
+    {
+      "relationships": {
+        "parent": {
+          "data": {}
+        }
+      },
+      "type": "standards",
+      "attributes": {
+        "education_levels": {
+          "grades": [
+            {
+              "code": "1"
+            }
+          ]
+        },
+        "status": "active",
+        "label": "Strand",
+        "section": {
+          "descr": "Grade 1",
+          "guid": "14e063e8-4bdb-4561-a4d1-055e97d4284c"
+        },
+        "number": {
+          "enhanced": "1.SL",
+          "raw": null
         },
         "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
+          "descr": "English/Language Arts",
+          "publication": {
+            "authorities": [
+              {
+                "descr": "Indiana DOE",
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "acronym": null
+              }
+            ],
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "descr": "Academic Standards"
+          },
+          "adopt_year": "2014",
+          "guid": "41ba4f1d-2568-4a2b-94d5-85c5d3dc22fc"
         },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
+        "guid": "0049f491-c381-423e-b6b0-c709c87d0a85",
+        "level": 1,
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "LANG"
+            }
+          ]
         },
-        "guid": "CEC49A36-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
+        "statement": {
+          "descr": "Speaking and Listening"
+        }
+      },
+      "id": "0049f491-c381-423e-b6b0-c709c87d0a85"
+    },
+    {
+      "id": "0050fcd8-7067-4d68-8eb9-88130acf8db9",
+      "type": "standards",
+      "relationships": {
         "parent": {
-          "guid": "CEC3B102-67AD-11DF-AB5F-995D9DFF4B22"
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/0050fcd8-7067-4d68-8eb9-88130acf8db9/parent"
+          },
+          "data": {
+            "id": "2a1a7c82-164b-46b2-b438-869bd44839d3",
+            "type": "standards"
+          }
+        }
+      },
+      "attributes": {
+        "statement": {
+          "descr": "Explaining rational decision making as the comparison between marginal benefits and marginal costs of an action"
         },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SOC"
+            }
+          ]
         },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "guid": "0050fcd8-7067-4d68-8eb9-88130acf8db9",
+        "number": {
+          "enhanced": "2.2",
+          "raw": null
         },
-        "deepest": "Y",
-        "descr": "Write arguments to support claims in an analysis of substantive topics or texts, using valid reasoning and relevant and sufficient evidence.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
+        "document": {
+          "adopt_year": "2010",
+          "descr": "Social Studies",
+          "publication": {
+            "descr": "Course of Study",
+            "guid": "9935E84E-C0DA-11DA-844D-F1B58A7EE3C7",
+            "authorities": [
+              {
+                "descr": "Alabama State Department of Education",
+                "guid": "912A8036-F1B9-11E5-862E-0938DC287387",
+                "acronym": "ALSDE"
+              }
+            ]
+          },
+          "guid": "fe79c173-62e4-490b-ad02-a9ee8db932ad"
+        },
+        "level": 2,
+        "section": {
+          "guid": "55be7afb-9fee-4f3f-8770-067faf94d574",
+          "descr": "Twelfth Grade - Economics"
+        },
+        "label": null,
+        "status": "active",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "12"
+            }
+          ]
         }
       }
     },
     {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.W.2",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEC57CD0-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
+      "id": "00563b63-efb3-491e-bcc0-e77520c4b946",
+      "attributes": {
+        "statement": {
+          "descr": "cost of gasoline during oil shortages, price and expiration date of perishable foods"
         },
+        "utilizations": [
+          {
+            "type": "example"
+          }
+        ],
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SOC"
+            }
+          ]
+        },
+        "level": 2,
+        "guid": "00563b63-efb3-491e-bcc0-e77520c4b946",
         "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
+          "guid": "fe79c173-62e4-490b-ad02-a9ee8db932ad",
+          "publication": {
+            "guid": "9935E84E-C0DA-11DA-844D-F1B58A7EE3C7",
+            "descr": "Course of Study",
+            "authorities": [
+              {
+                "descr": "Alabama State Department of Education",
+                "guid": "912A8036-F1B9-11E5-862E-0938DC287387",
+                "acronym": "ALSDE"
+              }
+            ]
+          },
+          "descr": "Social Studies",
+          "adopt_year": "2010"
         },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
+        "number": {
+          "raw": "Examples:",
+          "enhanced": null
         },
-        "guid": "CEC57CD0-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
+        "section": {
+          "descr": "Second Grade",
+          "guid": "0d7d88af-5d86-4000-94a8-199f9d86487d"
         },
+        "label": null,
+        "education_levels": {
+          "grades": [
+            {
+              "code": "2"
+            }
+          ]
+        },
+        "status": "active"
+      },
+      "type": "standards",
+      "relationships": {
         "parent": {
-          "guid": "CEC3B102-67AD-11DF-AB5F-995D9DFF4B22"
-        },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
-        },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Write informative/explanatory texts to examine and convey complex ideas and information clearly and accurately through the effective selection, organization, and analysis of content.",
-        "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/00563b63-efb3-491e-bcc0-e77520c4b946/parent"
+          },
+          "data": {
+            "id": "0b2bf947-2fee-4270-be42-a113ca12d194",
+            "type": "standards"
+          }
         }
       }
     },
     {
-      "data": {
-        "number": "CCSS.ELA-Literacy.CCRA.W.3",
-        "status": "Active",
-        "self": "http://api.academicbenchmarks.com/rest/v3/standards/CEC665B4-67AD-11DF-AB5F-995D9DFF4B22",
-        "grade": {
-          "high": "12",
-          "low": "K"
-        },
-        "document": {
-          "guid": "964E0FEE-AD71-11DE-9BF2-C9169DFF4B22",
-          "title": "Common Core State Standards"
-        },
-        "subject_doc": {
-          "guid": "CF6A375C-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "English Language Arts/Literacy (2010)"
-        },
-        "guid": "CEC665B4-67AD-11DF-AB5F-995D9DFF4B22",
-        "course": {
-          "guid": "CF69C79A-67AD-11DF-AB5F-995D9DFF4B22",
-          "descr": "College- and Career-Readiness Anchor Standards"
-        },
+      "id": "0067b578-3ba0-48b1-9114-d00a343403c4",
+      "type": "standards",
+      "relationships": {
         "parent": {
-          "guid": "CEC3B102-67AD-11DF-AB5F-995D9DFF4B22"
+          "data": {
+            "type": "standards",
+            "id": "3ddb12af-1ce3-447f-8be2-31c51d95528c"
+          },
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/0067b578-3ba0-48b1-9114-d00a343403c4/parent"
+          }
+        }
+      },
+      "attributes": {
+        "education_levels": {
+          "grades": [
+            {
+              "code": "12"
+            }
+          ]
         },
-        "subject": {
-          "broad": "LANG",
-          "code": "LANG"
+        "status": "active",
+        "section": {
+          "descr": "Global Economics",
+          "guid": "b5fb841a-3f99-42ad-917d-3a4a636e243c"
         },
-        "version": "2.7.4",
-        "has_relations": {
-          "derivative": 1
-        },
-        "deepest": "Y",
-        "descr": "Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details, and well-structured event sequences.",
+        "label": "Standard",
         "level": 3,
-        "label": "Anchor Standard",
-        "adopt_year": "2010",
-        "authority": {
-          "guid": "A83297F2-901A-11DF-A622-0C319DFF4B22",
-          "descr": "NGA Center/CCSSO",
-          "code": "CC"
+        "document": {
+          "publication": {
+            "authorities": [
+              {
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "descr": "Indiana DOE",
+                "acronym": null
+              }
+            ],
+            "descr": "Academic Standards",
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B"
+          },
+          "descr": "Social Studies",
+          "adopt_year": "2014",
+          "guid": "780ed194-ebdf-411d-8b66-9cedde903bbf"
+        },
+        "number": {
+          "raw": "GE.7.4",
+          "enhanced": "GE.7.4"
+        },
+        "guid": "0067b578-3ba0-48b1-9114-d00a343403c4",
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SOC"
+            }
+          ]
+        },
+        "statement": {
+          "descr": "Evaluate the impact of sociological, economic and technological changes on future careers"
         }
       }
+    },
+    {
+      "attributes": {
+        "education_levels": {
+          "grades": [
+            {
+              "code": "9"
+            },
+            {
+              "code": "10"
+            },
+            {
+              "code": "11"
+            },
+            {
+              "code": "12"
+            }
+          ]
+        },
+        "status": "active",
+        "section": {
+          "guid": "B8D25062-C801-11DD-B8FE-F90E9DFF4B22",
+          "descr": "Grades: 9-12 Revised February 2014"
+        },
+        "label": "Benchmark",
+        "level": 4,
+        "document": {
+          "adopt_year": "2008",
+          "descr": "Social Studies",
+          "publication": {
+            "descr": "Next Generation Sunshine State Standards",
+            "guid": "209823E4-2FB7-11DE-BA91-15719DFF4B22",
+            "authorities": [
+              {
+                "guid": "9127FF50-F1B9-11E5-862E-0938DC287387",
+                "descr": "Florida DOE",
+                "acronym": "FDOE"
+              }
+            ]
+          },
+          "guid": "B8D35264-C801-11DD-B8FE-F90E9DFF4B22"
+        },
+        "number": {
+          "enhanced": "SS.912.P.11.2",
+          "raw": "SS.912.P.11.2"
+        },
+        "guid": "007c8a71-ecaa-4e50-87f8-129a8a0025eb",
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SOC"
+            }
+          ]
+        },
+        "statement": {
+          "descr": "Characterize the difference between shallow (surface) and deep (elaborate) processing."
+        }
+      },
+      "relationships": {
+        "parent": {
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/007c8a71-ecaa-4e50-87f8-129a8a0025eb/parent"
+          },
+          "data": {
+            "type": "standards",
+            "id": "fc102b17-a6f0-4889-90f4-a180e76f18cc"
+          }
+        }
+      },
+      "type": "standards",
+      "id": "007c8a71-ecaa-4e50-87f8-129a8a0025eb"
+    },
+    {
+      "id": "007da077-c40b-4e03-a477-7d8847598176",
+      "attributes": {
+        "label": null,
+        "section": {
+          "descr": "Grade 1",
+          "guid": "14e063e8-4bdb-4561-a4d1-055e97d4284c"
+        },
+        "education_levels": {
+          "grades": [
+            {
+              "code": "1"
+            }
+          ]
+        },
+        "status": "active",
+        "level": 2,
+        "guid": "007da077-c40b-4e03-a477-7d8847598176",
+        "document": {
+          "descr": "English/Language Arts",
+          "publication": {
+            "descr": "Academic Standards",
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "authorities": [
+              {
+                "descr": "Indiana DOE",
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "acronym": null
+              }
+            ]
+          },
+          "adopt_year": "2014",
+          "guid": "41ba4f1d-2568-4a2b-94d5-85c5d3dc22fc"
+        },
+        "number": {
+          "raw": null,
+          "enhanced": "1.RF.1"
+        },
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "LANG"
+            }
+          ]
+        },
+        "statement": {
+          "descr": "Learning Outcome"
+        }
+      },
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/007da077-c40b-4e03-a477-7d8847598176/parent"
+          },
+          "data": {
+            "id": "81ce1544-ff83-42d4-bb3b-f0b8b1078e21",
+            "type": "standards"
+          }
+        }
+      }
+    },
+    {
+      "id": "00929C26-E2ED-47FD-9B55-10E349C6B001",
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "data": {
+            "type": "standards",
+            "id": "21B2008C-AE75-4EA2-85D5-C5C3C278EED9"
+          },
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/00929C26-E2ED-47FD-9B55-10E349C6B001/parent"
+          }
+        }
+      },
+      "attributes": {
+        "statement": {
+          "descr": "Identify and examine the impact that sports have had on the state of Indiana."
+        },
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "SOC"
+            }
+          ]
+        },
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "guid": "00929C26-E2ED-47FD-9B55-10E349C6B001",
+        "number": {
+          "raw": "IS.5.6",
+          "enhanced": "IS.5.6"
+        },
+        "document": {
+          "guid": "780ed194-ebdf-411d-8b66-9cedde903bbf",
+          "adopt_year": "2014",
+          "publication": {
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "descr": "Academic Standards",
+            "authorities": [
+              {
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "descr": "Indiana DOE",
+                "acronym": null
+              }
+            ]
+          },
+          "descr": "Social Studies"
+        },
+        "level": 2,
+        "label": "Standard",
+        "section": {
+          "descr": "Indiana Studies",
+          "guid": "C8330A90-A160-11E8-BB77-CC17E31E7476"
+        },
+        "education_levels": {
+          "grades": [
+            {
+              "code": "9"
+            },
+            {
+              "code": "10"
+            },
+            {
+              "code": "11"
+            },
+            {
+              "code": "12"
+            }
+          ]
+        },
+        "status": "active"
+      }
+    },
+    {
+      "attributes": {
+        "label": "Standard",
+        "section": {
+          "descr": "Grades 6-8 Literacy: History/Social Studies",
+          "guid": "62333361-a148-46f4-87b8-60f22260290b"
+        },
+        "status": "active",
+        "education_levels": {
+          "grades": [
+            {
+              "code": "6"
+            },
+            {
+              "code": "7"
+            },
+            {
+              "code": "8"
+            }
+          ]
+        },
+        "guid": "0094e7b1-ea9a-4610-90ba-8b7f7a000b2c",
+        "document": {
+          "guid": "41ba4f1d-2568-4a2b-94d5-85c5d3dc22fc",
+          "publication": {
+            "authorities": [
+              {
+                "acronym": null,
+                "guid": "9128B2EC-F1B9-11E5-862E-0938DC287387",
+                "descr": "Indiana DOE"
+              }
+            ],
+            "guid": "993690BE-C0DA-11DA-BD64-B7CEA439013B",
+            "descr": "Academic Standards"
+          },
+          "descr": "English/Language Arts",
+          "adopt_year": "2014"
+        },
+        "number": {
+          "enhanced": "6-8.LH.3.2",
+          "raw": "6-8.LH.3.2:"
+        },
+        "level": 3,
+        "disciplines": {
+          "subjects": [
+            {
+              "code": "LANG"
+            }
+          ]
+        },
+        "utilizations": [
+          {
+            "type": "alignable"
+          }
+        ],
+        "statement": {
+          "descr": "Describe how a text presents information (Examples: sequentially, comparatively, causally)."
+        }
+      },
+      "type": "standards",
+      "relationships": {
+        "parent": {
+          "links": {
+            "related": "https://api.abconnect.certicaconnect.com/rest/v4.1/standards/0094e7b1-ea9a-4610-90ba-8b7f7a000b2c/parent"
+          },
+          "data": {
+            "id": "8b07ebd0-8b39-47f0-8604-3aeba8025b2f",
+            "type": "standards"
+          }
+        }
+      },
+      "id": "0094e7b1-ea9a-4610-90ba-8b7f7a000b2c"
     }
   ],
-  "count": 6687,
-  "offset": 0,
-  "limit": 20,
-  "next": "http://api.academicbenchmarks.com/rest/v3/standards/?user.id=12&offset=20",
-  "last": "http://api.academicbenchmarks.com/rest/v3/standards/?user.id=12&offset=6680",
-  "type": "standard",
-  "took": 3616
+  "meta": {
+    "count": 14601,
+    "limit": 20,
+    "offset": 0,
+    "took": 93
+  }
 }
